@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fashion eye</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="https://i.pinimg.com/236x/ff/ef/b4/ffefb48367489dd57eb3520cd87fa29c.jpg" alt="">
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><a href="#">Whislist</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img src="https://i.pinimg.com/564x/08/a7/1b/08a71b6429a9df225e90e535f5caed3c.jpg" class="fashion" alt="">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="https://i.pinimg.com/236x/6d/81/e8/6d81e80cf7db44fd4a05f26660afa470.jpg" alt="">
+                    <div><h1>list </h1>
+                        <p>Lorem ipsum dolor sit, amet </p>
+                </div>
+                </div>
+                <div class="feature two">
+                    <img src="https://i.pinimg.com/236x/ad/f3/99/adf399048fe2ec4ecef57c4672d6377c.jpg" alt="">
+                    <div><h1>categories</h1>
+                        <p>Lorem ipsum dolor sit, amet </p>
+                </div>
+                </div>
+                <div class="feature three">
+                    <img src="https://i.pinimg.com/236x/b3/f1/da/b3f1da70927cc796e51f5a9066dde860.jpg" alt="">
+                    <div><h1>cart </h1>
+                        <p>Lorem ipsum dolor sit, amet </p>
+                </div>
+                </div>
+                <div class="feature four">
+                    <img src="https://i.pinimg.com/236x/20/44/9b/20449b07e36e3f3feb25e9106a636801.jpg" alt="">
+                
+                <div><h1>savelist </h1>
+                    <p>Lorem ipsum dolor sit, amet </p>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="controls">
+            <img src="https://i.pinimg.com/236x/d1/94/da/d194daa8f7ccd95d2b9a2e2848f3f4aa.jpg" id="upbtn"alt="">
+            <h3>wishlist</h3>
+            <img src="https://i.pinimg.com/236x/d1/94/da/d194daa8f7ccd95d2b9a2e2848f3f4aa.jpg" id="downbtn"alt="">
+        </div>
+
+    </div>
+    <script>
+        var circle = document.getElementById("circle")
+        var upbtn = document.getElementById("upbtn")
+        var downbtn = document.getElementById("downbtn")
+
+        var rotateValue = circle.style.transform;
+        var rotateSum;
+        upbtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(-90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+
+
+        }
+        downbtn.onclick = function()
+        {
+            rotateSum = rotateValue + "rotate(90deg)";
+            circle.style.transform = rotateSum;
+            rotateValue = rotateSum;
+
+
+        }
+    </script>
+    
+</body>
+</html>
